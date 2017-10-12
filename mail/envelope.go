@@ -7,7 +7,7 @@ import (
 	"encoding/base64"
 	"errors"
 	"fmt"
-	"gopkg.in/iconv.v1"
+	iconv "github.com/djimenez/iconv-go"
 	"io"
 	"io/ioutil"
 	"mime/quotedprintable"
@@ -238,7 +238,7 @@ func MailTransportDecode(str string, encodingType string, charset string) string
 	if charset != "UTF-8" {
 		charset = fixCharset(charset)
 		// iconv is pretty good at what it does
-		if cd, err := iconv.Open("UTF-8", charset); err == nil {
+		if cd, err := iconv.NewConverter(charset, "UTF-8"); err == nil {
 			defer func() {
 				cd.Close()
 				if r := recover(); r != nil {
@@ -246,7 +246,8 @@ func MailTransportDecode(str string, encodingType string, charset string) string
 				}
 			}()
 			// eg. charset can be "ISO-2022-JP"
-			return cd.ConvString(str)
+			out, _ := cd.ConvertString(str)
+			return out
 		}
 
 	}

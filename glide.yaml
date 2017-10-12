@@ -8,7 +8,7 @@ import:
   subpackages:
   - redis
 - package: github.com/spf13/cobra
-- package: gopkg.in/iconv.v1
+- package: github.com/djimenez/iconv-go
   version: ~1.1.1
 - package: github.com/asaskevich/EventBus
   version: 52a0dcfcbd8299da13aad44b96a6642dd79cbb08
