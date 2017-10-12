@@ -3,8 +3,8 @@ package backends
 import (
 	"fmt"
 
-	"github.com/ganglio/go-guerrilla/mail"
-	"github.com/ganglio/go-guerrilla/response"
+	"github.com/ganglio/go-guerrilla-bp/mail"
+	"github.com/ganglio/go-guerrilla-bp/response"
 
 	"github.com/garyburd/redigo/redis"
 )

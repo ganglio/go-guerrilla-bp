@@ -1,9 +1,9 @@
 package guerrilla
 
 import (
-	"github.com/ganglio/go-guerrilla/backends"
-	"github.com/ganglio/go-guerrilla/log"
-	"github.com/ganglio/go-guerrilla/tests/testcert"
+	"github.com/ganglio/go-guerrilla-bp/backends"
+	"github.com/ganglio/go-guerrilla-bp/log"
+	"github.com/ganglio/go-guerrilla-bp/tests/testcert"
 	"io/ioutil"
 	"os"
 	"strings"

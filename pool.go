@@ -2,8 +2,8 @@ package guerrilla
 
 import (
 	"errors"
-	"github.com/ganglio/go-guerrilla/log"
-	"github.com/ganglio/go-guerrilla/mail"
+	"github.com/ganglio/go-guerrilla-bp/log"
+	"github.com/ganglio/go-guerrilla-bp/mail"
 	"net"
 	"sync"
 	"sync/atomic"

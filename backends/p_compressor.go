@@ -3,7 +3,7 @@ package backends
 import (
 	"bytes"
 	"compress/zlib"
-	"github.com/ganglio/go-guerrilla/mail"
+	"github.com/ganglio/go-guerrilla-bp/mail"
 	"io"
 	"sync"
 )

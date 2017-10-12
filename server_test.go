@@ -8,10 +8,10 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/ganglio/go-guerrilla/backends"
-	"github.com/ganglio/go-guerrilla/log"
-	"github.com/ganglio/go-guerrilla/mail"
-	"github.com/ganglio/go-guerrilla/mocks"
+	"github.com/ganglio/go-guerrilla-bp/backends"
+	"github.com/ganglio/go-guerrilla-bp/log"
+	"github.com/ganglio/go-guerrilla-bp/mail"
+	"github.com/ganglio/go-guerrilla-bp/mocks"
 )
 
 // getMockServerConfig gets a mock ServerConfig struct used for creating a new server

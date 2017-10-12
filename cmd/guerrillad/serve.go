@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"github.com/ganglio/go-guerrilla"
-	"github.com/ganglio/go-guerrilla/log"
+	"github.com/ganglio/go-guerrilla-bp"
+	"github.com/ganglio/go-guerrilla-bp/log"
 	"github.com/spf13/cobra"
 	"os"
 	"os/exec"

@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/ganglio/go-guerrilla/backends"
-	"github.com/ganglio/go-guerrilla/log"
+	"github.com/ganglio/go-guerrilla-bp/backends"
+	"github.com/ganglio/go-guerrilla-bp/log"
 	"io/ioutil"
 	"time"
 )
